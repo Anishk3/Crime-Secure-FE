@@ -1,0 +1,85 @@
+.trackcomplaint{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: url(https://image.ibb.co/de6JzG/bitmap_1_1.png) !important;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.trackcomplaint .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  .form-container {
+    border: 1px solid #2f07e0;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #0b0c0dad;
+  }
+  
+  .input.full-width {
+    width: 100%;
+  }
+  
+  .required {
+    color: red;
+  }
+  
+  .input-group {
+    display: flex;
+  }
+  
+  .captcha-group {
+    display: flex;
+  }
+  
+  .captcha-text {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: monospace;
+  }
+  
+  .btn-otp,
+  .btn-refresh,
+  .btn-submit {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-otp {
+    background-color: #fcb900;
+    color: #fff;
+  }
+  
+  .btn-refresh {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  
+  .btn-submit {
+    width: 50%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 20px;
+  }
+  

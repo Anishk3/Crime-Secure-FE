@@ -1,0 +1,14 @@
+.incident{
+    max-width:1000px;
+    margin: 0 auto;
+    padding: 20px; /* Adjust the padding as needed */
+}
+
+.incidentbg{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: url(https://image.ibb.co/de6JzG/bitmap_1_1.png) ;
+    background-size: cover;
+    overflow-x: hidden;
+}
