@@ -1,0 +1,172 @@
+.Officerlist {
+    padding: 0;
+    margin: 0;
+    height: 91vh;
+    box-sizing: border-box;
+    background: url(https://image.ibb.co/de6JzG/bitmap_1_1.png) !important;
+    font-family: "Roboto", sans-serif;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.Officerlist .container {
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Officerlist h2 {
+    font-size: 35px;
+    padding-top: 80px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Officerlist .col_btn {
+    border: none;
+    outline: none;
+    padding: 5px 22px;
+    background: transparent;
+    border: 1px solid #00337C;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+    background: #2684ff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+}
+
+.Officerlist .col_btn:hover {
+    background: transparent;
+    color: #2684ff;
+    border: 1px solid #00337C;
+}
+
+/* Make sure the button fits well */
+.Officerlist .col-9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Officerlist .responsive-table .table-header {
+    position: relative;
+    top: 30px;
+    background-color: #95a5a6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Officerlist .responsive-table li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    background-color: transparent;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.Officerlist .responsive-table .col {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Officerlist .responsive-table .col-1,
+.Officerlist .responsive-table .col-2,
+.Officerlist .responsive-table .col-3,
+.Officerlist .responsive-table .col-4,
+.Officerlist .responsive-table .col-5,
+.Officerlist .responsive-table .col-6,
+.Officerlist .responsive-table .col-7,
+.Officerlist .responsive-table .col-8,
+.Officerlist .responsive-table .col-9 {
+    flex: 1 1 10%;
+    text-align: center;
+}
+
+.Officerlist .responsive-table .col-2 {
+    flex: 1 1 15%;
+    text-align: left;
+}
+
+.Officerlist .responsive-table .col-3,
+.Officerlist .responsive-table .col-4,
+.Officerlist .responsive-table .col-5,
+.Officerlist .responsive-table .col-6,
+.Officerlist .responsive-table .col-7,
+.Officerlist .responsive-table .col-8 {
+    flex: 1 1 25%;
+}
+
+.Officerlist .head_col-1,
+.Officerlist .head_col-2,
+.Officerlist .head_col-3,
+.Officerlist .head_col-4,
+.Officerlist .head_col-5,
+.Officerlist .head_col-6,
+.Officerlist .head_col-7,
+.Officerlist .head_col-8,
+.Officerlist .head_col-9 {
+    text-align: center;
+    padding: 10px;
+}
+
+.Officerlist .head_col-2,
+.Officerlist .head_col-3,
+.Officerlist .head_col-4,
+.Officerlist .head_col-5,
+.Officerlist .head_col-6,
+.Officerlist .head_col-7,
+.Officerlist .head_col-8,
+.Officerlist .head_col-9 {
+    position: relative;
+    left: -48px;
+}
+
+
+@media all and (max-width: 767px) {
+    .responsive-table .table-header {
+        display: none;
+    }
+
+    .responsive-table li {
+        display: block;
+    }
+
+    .responsive-table .col {
+        flex-basis: 100%;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .responsive-table .col:before {
+        color: #6c7a89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+    }
+
+    .Officerlist h2 {
+        font-size: 28px;
+        padding-top: 40px;
+    }
+
+    .Officerlist .col_btn {
+        margin-top: 10px;
+        padding: 8px 18px;
+        width: 100%;
+    }
+}

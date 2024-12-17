@@ -26,7 +26,14 @@ const Login = () => {
         const role=response.data.userDto.role
         setAuth({username,role,accessToken,id,email})
 
-        navigate("/home")
+          // Navigate based on role
+    if (role === "STATION_HEAD") {
+      navigate("/officerlist");
+    } else if (role === "CITIZEN") {
+      navigate("/complaints");
+    } else {
+      navigate("/home"); // Fallback or default route
+    }
     })
 }
 
