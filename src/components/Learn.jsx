@@ -1,54 +1,51 @@
-import React from 'react'
-
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import React from 'react';
+import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline';
 
 const features = [
   {
     name: 'Citizen files a complaint',
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+      'A citizen can easily file a complaint with the crime management system, providing essential details regarding the issue at hand. This complaint is securely stored for review by the Station Head.',
     icon: CloudArrowUpIcon,
   },
   {
     name: 'StationHead reviews and Assign an officer',
     description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+      'The Station Head reviews the filed complaint and assigns the case to an officer. The officer is then responsible for investigating the case and ensuring it is handled efficiently.',
     icon: LockClosedIcon,
   },
   {
     name: 'Officer reviews and work on the case',
     description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+      'The officer investigates the case, gathers necessary evidence, and works towards resolving the issue. This stage involves interacting with the concerned parties and processing the evidence collected.',
     icon: ArrowPathIcon,
   },
   {
-    name: 'StationHead does a final reiew and close the case',
+    name: 'StationHead does a final review and close the case',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+      'Once the officer completes the investigation, the Station Head performs a final review of the case. If everything is in order, the case is closed, ensuring that justice is served.',
     icon: FingerPrintIcon,
   },
-]
+];
 
 const Learn = () => {
   return (
-    <div>
-            <div className="py-24 sm:py-32">
+    <div id="learn" className="py-40 sm:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base/7 font-semibold text-indigo-600">What happens to your complaint</h2>
+          <h3 className="mt-5 text-base/2 font-semibold text-indigo-600">What happens to your complaint</h3>
           <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
             Everything you need to Know about our app
           </p>
           <p className="mt-6 text-lg/8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+            Our app is designed to streamline the process of filing and handling complaints, ensuring a secure, swift, and transparent process at every step.
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-5xl">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-20 gap-y-13 lg:max-w-none lg:grid-cols-2 lg:gap-y-14">
             {features.map((feature) => (
               <div key={feature.name} className="relative pl-16">
-                <dt className="text-base/7 font-semibold text-gray-900">
+                <dt className="text-base/6 font-semibold text-gray-900">
                   <div className="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
                     <feature.icon aria-hidden="true" className="size-6 text-white" />
                   </div>
@@ -61,8 +58,7 @@ const Learn = () => {
         </div>
       </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Learn
+export default Learn;

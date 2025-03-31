@@ -8,19 +8,23 @@ import "../styles/Home.css"
 import Learn from './Learn';
 import HeroSection from './HeroSection';
 
+
+
 const Home = () => {
+
+    
     return (
         <div className="home">
             <HeroSection/>
             {/* Crime Cards Section */}
-            <div className="mt-10">
-            <h2 className="text-2xl font-bold text-center mb-6">File Your Complaint</h2>
+            <div className="-mt-1">
+            <h2 className="text-4xl font-bold text-center mb-6">File Your Complaint</h2>
             <div className="flex flex-wrap justify-center gap-16 pt-10">
                 <div className="max-w-xs bg-white border rounded-lg shadow-lg">
                     <img src={murdercard} alt="Murder" className="rounded-t-lg h-80" />
                     <div className="p-4">
                         <h4 className="text-lg font-semibold mb-3 flex items-center justify-center">MURDER</h4>
-                        <Link to="/filecomplaint" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded flex items-center justify-center">File Complaint</Link>
+                        <Link to="/login" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded flex items-center justify-center">File Complaint</Link>
                     </div>
                 </div>
 
@@ -28,7 +32,7 @@ const Home = () => {
                     <img src={theftcard} alt="Theft" className="rounded-t-lg h-80" />
                     <div className="p-4">
                         <h4 className="text-lg font-semibold mb-3 flex items-center justify-center">THEFT</h4>
-                        <Link to="/filecomplaint" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded flex items-center justify-center">File Complaint</Link>
+                        <Link to="/login" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded flex items-center justify-center">File Complaint</Link>
                     </div>
                 </div>
 
@@ -36,7 +40,7 @@ const Home = () => {
                     <img src={missingpersoncard} alt="Missing Person" className="rounded-t-lg h-80" />
                     <div className="p-4 ">
                         <h4 className="text-lg font-semibold mb-3 flex items-center justify-center">MISSING PERSON</h4>
-                        <Link to="/filecomplaint" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded flex items-center justify-center">File Complaint</Link>
+                        <Link to="/login" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded flex items-center justify-center">File Complaint</Link>
                     </div>
                 </div>
 
@@ -44,15 +48,15 @@ const Home = () => {
                     <img src={abusecard} alt="Abuse" className="rounded-t-lg h-80" />
                     <div className="p-4">
                         <h4 className="text-lg font-semibold mb-3 flex items-center justify-center">ABUSE</h4>
-                        <Link to="/filecomplaint" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded flex items-center justify-center">File Complaint</Link>
+                        <Link to="/login" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded flex items-center justify-center">File Complaint</Link>
                     </div>
                 </div>
             </div>
             </div>
 
             {/* Learning Corner Section */}
-            <div className="mt-10">
-                <h2 className="text-2xl font-bold text-center mb-6">Learning Corner</h2>
+            <div className="mt-24">
+                <h2 className="text-4xl font-bold text-center mb-14">Learning Corner</h2>
                 <div className="flex flex-wrap justify-center gap-6">
                     <div className="max-w-xs bg-white border rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
                         <div className="p-4">

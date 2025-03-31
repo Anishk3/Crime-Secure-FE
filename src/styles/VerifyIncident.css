@@ -1,18 +1,12 @@
-.VerifyIncident {
-    padding: 0;
-    margin: 0;
-    height: 91vh;
-    box-sizing: border-box;
-    background: url(https://image.ibb.co/de6JzG/bitmap_1_1.png) !important;
-    font-family: "Roboto", sans-serif;
-    background-size: cover;
-    overflow-x: hidden;
-}
+
 
 .VerifyIncident .container {
-    max-width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90vw;
+    background-color: transparent;
+    margin: 0 auto;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -32,7 +26,7 @@
     border: 1px solid #00337C;
     font-size: 0.9rem;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: 0.3s;
     background: #2684ff;
     display: block;
@@ -56,25 +50,38 @@
 /* Table Header and Row Alignments */
 .VerifyIncident .responsive-table .table-header {
     position: relative;
-    top: 30px;
     background-color: #95a5a6;
-    font-size: 14px;
+    padding-bottom: 5px;
+    font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* font-size: 20px; */
+    align-items: center;
+}
+
+.VerifyIncident .responsive-table .table-row {
+    padding: 15px 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 
 .VerifyIncident .responsive-table li {
     border-radius: 3px;
-    padding: 25px 30px;
+    /* padding: 25px 30px; */
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
     background-color: transparent;
-    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    /* box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1); */
 }
 
 .VerifyIncident .responsive-table .col {
@@ -87,37 +94,51 @@
 .VerifyIncident .responsive-table .col-2,
 .VerifyIncident .responsive-table .col-3,
 .VerifyIncident .responsive-table .col-4,
-.VerifyIncident .responsive-table .col-5
+.VerifyIncident .responsive-table .col-5,
+.VerifyIncident .responsive-table .col-6
 {
-    flex: 1 1 60%;
+    flex: 1 1 15%;
+    justify-content: center;
     text-align: center;
+    position: relative;
+    right: 52px;
 }
 
 .VerifyIncident .responsive-table .col-2 {
-    flex: 1 1 77%;
-    text-align: left;
+    /* flex: 1 1 77%;
+    text-align: left; */
 }
 
 .VerifyIncident .responsive-table .col-3 {
-    flex: 1 1 115%;
+    /* flex: 1 1 115%; */
 }
 
 .VerifyIncident .responsive-table .col-4 {
-    flex: 1 1 49%;
+    /* flex: 1 1 49%; */
 }
 
 .VerifyIncident .responsive-table .col-5 {
-    flex: 1 1 49%;
+    position: relative;
+    right: 38px;
+}
+
+.VerifyIncident .responsive-table .col-6 {
+    position: relative;
+    right: 34px;
 }
 
 .VerifyIncident .head_col-1,
 .VerifyIncident .head_col-2,
 .VerifyIncident .head_col-3,
 .VerifyIncident .head_col-4,
-.VerifyIncident .head_col-5
+.VerifyIncident .head_col-5,
+.VerifyIncident .head_col-6
  {
     text-align: center;
     padding: 10px;
+    flex: 1 1 0%;
+    position: relative;
+    right: 40px;
 }
 
 .VerifyIncident .head_col-2,
@@ -126,7 +147,6 @@
 .VerifyIncident .head_col-5
 {
     position: relative;
-    left: -161px;
 }
 
 .VerifyIncident .col-4 {
@@ -136,29 +156,7 @@
     width: 100%; 
 }
 
-.VerifyIncident button {
-    width: 280px; /* Fixed width for the button */
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
 
-.VerifyIncident .dropdown-content {
-    display: flex;
-    align-items: center; /* Ensures the dropdown is aligned properly */
-    margin-left: 10px; /* Add some space between the button and dropdown */
-    gap: 30px; /* Add spacing between button and select */
-}
-
-.VerifyIncident select {
-    width: auto; /* Makes sure the dropdown width adjusts based on its content */
-    padding: 0.5rem; /* Padding inside dropdown for a better look */
-    border-radius: 0.25rem;
-    border: 1px solid #ccc; /* Light border for dropdown */
-
-}
 
 
 

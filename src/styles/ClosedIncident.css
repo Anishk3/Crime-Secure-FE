@@ -1,0 +1,168 @@
+/* Overall layout for the CloseIncident component */
+.CloseIncident {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  /* background: url(https://image.ibb.co/de6JzG/bitmap_1_1.png) !important; */
+  font-family: "Roboto", sans-serif;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.CloseIncident .container {
+  width: 90vw;
+  background-color: transparent;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+/* Header Styles */
+.CloseIncident h2 {
+  font-size: 35px;
+  padding-top: 80px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Button and dropdown alignment */
+.CloseIncident .col-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+}
+
+/* Responsive table styles */
+.CloseIncident .responsive-table {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Table Header and Row Styles */
+.CloseIncident .table-header {
+  display: flex;
+  position: relative;
+  background-color: #95a5a6;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.CloseIncident .table-header .head_col-1,
+.CloseIncident .table-header .head_col-2,
+.CloseIncident .table-header .head_col-3,
+.CloseIncident .table-header .head_col-4,
+.CloseIncident .table-header .head_col-5,
+.CloseIncident .table-header .head_col-6 {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  right: 40px;
+}
+
+.CloseIncident .table-row {
+  display: flex;
+  padding: 15px 10px;
+  font-size: 16px;
+  /* border: 1px solid grey; */
+  background-color: transparent;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.CloseIncident .table-row .col {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  right: 36px;
+}
+
+/* Buttons for actions */
+.CloseIncident .bg-blue-500 {
+  background-color: #2684ff;
+  padding: 10px 22px;
+  border: none;
+  width: 160px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+  position: relative;
+  left: 38px;
+}
+
+.CloseIncident .bg-blue-500:hover {
+  background: transparent;
+  color: #2684ff;
+  border: 1px solid #00337C;
+}
+
+/* Dropdown and button spacing */
+.CloseIncident .dropdown-content {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 30px;
+}
+
+.CloseIncident select {
+  width: auto;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+/* Responsive styling */
+@media all and (max-width: 767px) {
+  .CloseIncident .table-header {
+    display: none;
+  }
+
+  .CloseIncident .table-row {
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .CloseIncident .table-row .col {
+    flex-basis: 100%;
+    display: block;
+    padding: 10px 0;
+  }
+
+  .CloseIncident .table-header .head_col-1,
+  .CloseIncident .table-header .head_col-2,
+  .CloseIncident .table-header .head_col-3,
+  .CloseIncident .table-header .head_col-4,
+  .CloseIncident .table-header .head_col-5,
+  .CloseIncident .table-header .head_col-6 {
+    font-size: 14px;
+  }
+
+  .CloseIncident h2 {
+    font-size: 28px;
+    padding-top: 40px;
+  }
+
+  .CloseIncident .bg-blue-500 {
+    margin-top: 10px;
+    padding: 8px 18px;
+    width: 100%;
+  }
+}

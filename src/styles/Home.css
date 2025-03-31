@@ -37,7 +37,7 @@
 
 .learning-corner-section {
     max-width: 100%;
-    background-color: rgb(179, 225, 245);
+    background-color: transparent;
     padding: 2rem 1rem;
     text-align: center;
     margin-top: 3rem;
@@ -87,11 +87,12 @@
     text-align: justify;
 }
 
-.home{
+/* .home{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background: url(https://image.ibb.co/de6JzG/bitmap_1_1.png);
+    min-height: 100vh;
     background-size: cover;
     overflow-x: hidden;
-}
+} */

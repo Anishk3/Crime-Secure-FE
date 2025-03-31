@@ -1,145 +1,151 @@
-.Mycomplaint{
-        padding: 0;
-        margin: 0;
-        height: 91vh;
-        box-sizing: border-box;
-        background: url(https://image.ibb.co/de6JzG/bitmap_1_1.png) !important;
-        font-family: "Roboto", sans-serif;
-        background-size: cover;
-        overflow-x: hidden;
+/* Overall Styling */
+.Mycomplaint {
+    color:#071842;
+    /* background-color: #f8f9fa; Light gray for better readability */
+    padding: 0px;
 }
 
+.Mycomplaint h2 {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding-top: 30px;
+    color: #071842;
+    font-size: 40px;
+}
+
+/* Table Container */
 .Mycomplaint .container {
-    max-width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90vw;
+    margin: 0 auto;
+    /* background-color: #fff; */
+    border-radius: 8px;
     padding-left: 10px;
     padding-right: 10px;
+    overflow: hidden;
 }
-.Mycomplaint h2 {
-    font-size: 35px;
-    padding-top: 80px;
+
+/* Table Header */
+.Mycomplaint .responsive-table .table-header {
+    /* border: 1px solid #0f0a0a; */
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr; /* Adjust column widths */
+    background-color: #95a5a6;
+    color: #071842;
+    padding: 15px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    align-items: center;
+    margin-bottom: 15px; 
+}
+
+/* Table Rows */
+.Mycomplaint .responsive-table .table-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    padding: 15px 10px;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid #0f0a0a; */
+    /* background-color: #fff; */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.Mycomplaint .responsive-table .table-row:hover {
+    background-color: #f1f5f9; /* Light blue on hover */
+}
+
+/* Table Cells */
+.Mycomplaint .responsive-table div {
+    font-size: 16px;
+    color:#071842;
     text-align: center;
-}
-.Mycomplaint h2 small {
-    font-size: 0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Prevent text wrapping */
+    
 }
 
-.Mycomplaint .col_btn{
+/* Button Styling */
+.Mycomplaint .col_btn {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 8px 0px;
     border: none;
-    outline: none;
-    padding: 5px 22px;
-    background: transparent;
-    border: 1px solid #00337C;
-    font-size: 0.9rem;
-    color: #fff;
     border-radius: 5px;
-    transition: 0.3s;
-    background: #2684ff;
-    position: relative;
-    right: 80px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    /* Center the button */
+    display: inline-block; /* Ensure button takes its content size */
+    margin: auto; /* Horizontally center */
+    position: relative; /* Align within its parent container */
 }
 
-.Mycomplaint .col_btn:hover{
-    background: transparent;
-    color: #2684ff;
-    border: 1px solid #00337C;
+.Mycomplaint .col_btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #fff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .responsive-table .table-header,
+    .responsive-table .table-row {
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 12px;
     }
 
-.Mycomplaint .responsive-table .table-header{
-    position: relative;
-    top: 30px;
+    .responsive-table .table-row div:nth-child(4),
+    .responsive-table .table-row div:nth-child(5) {
+        display: none; /* Hide less important columns on smaller screens */
+    }
 }
 
-.Mycomplaint .responsive-table li {
-    border-radius: 3px;
-    padding: 25px 30px;
+.pagination {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    padding-bottom: 30px
+    
 }
-.Mycomplaint responsive-table .table-header {
-    background-color: #95a5a6;
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    padding: 5px 10px;
+    border: 1px solid 	#888888;
+    cursor: pointer;
+    background-color: white;
+    color : black
+}
+
+.pagination .page-link:hover {
+    background-color: #1623db;
+}
+
+.pagination .page-link.active { /* Add this rule */
+    background-color: #1623db;
+    color: white; /* Make the text white when active */
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #1e1616;
+    border-radius: 5px;
+    outline: none;
     font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-}
-.Mycomplaint .responsive-table .table-row {
-    background-color: transparent;
-    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
-}
-.Mycomplaint .responsive-table .col-1 {
-    flex-basis: 15%;
-    /* overflow-x: scroll; */
-    overflow-y: hidden;
-}
-
-.Mycomplaint .responsive-table ::-webkit-scrollbar{
-    width: 0.5px;
-}
-
-.Mycomplaint .responsive-table .topic1 {
-    flex-basis: 15%;
-    overflow-x: hidden;
-}
-
-.Mycomplaint .responsive-table .topic2 {
-    flex-basis: 15%;
-    overflow-x: hidden;
-}
-
-.Mycomplaint .responsive-table .col-2 {
-    overflow-y: hidden;
-    flex-basis: 15%;
-    /* overflow-x: scroll; */
-}
-.Mycomplaint .responsive-table .col-3 {
-    flex-basis: 10%;
-    margin-right: 15px;
-}
-
-.Mycomplaint .head_col-2{
-    position: relative;
-    left: -132px;
-}
-
-.Mycomplaint .head_col-3{
-    position: relative;
-    left: -132px;
-}
-
-.Mycomplaint .head_col-4{
-    position: relative;
-    left: -180px;
-}
-
-.Mycomplaint .head_col-5{
-    position: relative;
-    left: -124px;
-}
-
-.Mycomplaint .responsive-table .col-4 {
-    flex-basis: 23%;
-}
-@media all and (max-width: 767px) {
-    .responsive-table .table-header {
-        display: none;
-   }
-    .responsive-table li {
-        display: block;
-   }
-    .responsive-table .col {
-        flex-basis: 100%;
-   }
-    .responsive-table .col {
-        display: flex;
-        padding: 10px 0;
-   }
-    .responsive-table .col:before {
-        color: #6c7a89;
-        padding-right: 10px;
-        content: attr(data-label);
-        flex-basis: 50%;
-        text-align: right;
-   }
 }
